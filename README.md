@@ -12,7 +12,7 @@ allprojects {
 
 ```java
 dependencies {
-	        implementation 'com.github.kaustubhk24:NumberToWords-Library:Tag'
+	     implementation 'com.github.kaustubhk24:NumberToWords-Library:-3951aa56a0-1'
 	}
 ```
 
