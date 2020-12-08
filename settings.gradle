@@ -1,0 +1,3 @@
+include ':NumberToWords'
+include ':app'
+rootProject.name = "NumberToWords Example"
