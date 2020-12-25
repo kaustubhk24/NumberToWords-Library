@@ -1,10 +1,12 @@
 package com.justinclicks.numbertowordsexample;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.justinclicks.numbertowords.NumberToWordConverter;
 import com.justinclicks.numbertowords.NumberToWords;
 
 
@@ -15,16 +17,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView inwords =findViewById(R.id.inwords);
+        TextView inwords = findViewById(R.id.inwords);
 
-        int number=2356;
+        int number = 2356;
         StringBuffer in_words;
 
 
-        NumberToWords instance=new NumberToWords();
+        NumberToWords instance = new NumberToWords();
 
-        if(number>0)
-        {
+        if (number > 0) {
             instance.startPrint(number);
             in_words = new StringBuffer();
 
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-
+        Toast.makeText(this, "Converted " + number + " to word is " + NumberToWordConverter.convert(number), Toast.LENGTH_LONG).show();
 
     }
 }
