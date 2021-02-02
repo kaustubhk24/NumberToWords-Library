@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class NumberToWordConverter {
+public class NumberToWordConverterLakhFormat {
     static ArrayList<PowerName> powersList = null;
     static Map<Integer, String> directMappings = null;
 

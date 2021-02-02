@@ -1,8 +1,9 @@
+
 package com.justinclicks.numbertowords;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+        import java.util.ArrayList;
+        import java.util.HashMap;
+        import java.util.Map;
 
 public class NumberToWordConverterMillionFormat {
     static ArrayList<PowerName> powersList = null;
@@ -85,7 +86,7 @@ public class NumberToWordConverterMillionFormat {
             powersList.add(new PowerName(2, "Hundred"));
             powersList.add(new PowerName(3, "Thousand"));
             powersList.add(new PowerName(5, "Hundred Thousand"));
-            powersList.add(new PowerName(5, "Million"));
+            powersList.add(new PowerName(6, "Million"));
             powersList.add(new PowerName(9, "Billion"));
         }
     }
@@ -98,4 +99,4 @@ public class NumberToWordConverterMillionFormat {
             this.powerValue = powerValue;
             this.suffix = suffix;
         }
-    }
+    }}

@@ -7,10 +7,17 @@
 # Usage 
 
 ```java
+// For Lakh format
 
-NumberToWordConverter numberToWordConverter = new NumberToWordConverter();
+NumberToWordConverterLakhFormat  instance_for_lakh = new NumberToWordConverterLakhFormat();
 
-String words = numberToWordConverter.convert(answer);
+String wordLakh = instance_for_lakh.convert(answer);
+
+// For Million Format
+
+NumberToWordConverterMillionFormat  instance_for_Million = new NumberToWordConverterMillionFormat();
+
+String wordMillion = instance_for_Million.convert(answer);
 
 
 ```

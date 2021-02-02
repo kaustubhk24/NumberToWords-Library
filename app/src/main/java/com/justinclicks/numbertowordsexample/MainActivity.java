@@ -6,8 +6,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.justinclicks.numbertowords.NumberToWordConverter;
-import com.justinclicks.numbertowords.NumberToWords;
+import com.justinclicks.numbertowords.NumberToWordConverterLakhFormat;
+import com.justinclicks.numbertowords.NumberToWordConverterMillionFormat;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,25 +19,17 @@ public class MainActivity extends AppCompatActivity {
 
         TextView inwords = findViewById(R.id.inwords);
 
-        int number = 2356;
+        int number = 560000;
         StringBuffer in_words;
 
+        NumberToWordConverterLakhFormat instance = new NumberToWordConverterLakhFormat();
+        NumberToWordConverterMillionFormat millionFormat=new NumberToWordConverterMillionFormat();
 
-        NumberToWords instance = new NumberToWords();
 
-        if (number > 0) {
-            instance.startPrint(number);
-            in_words = new StringBuffer();
-
-            for (String s : instance.output) {
-                in_words.append(s);
-                in_words.append(" ");
-            }
-            inwords.setText(in_words);
-
-        }
-
-        Toast.makeText(this, "Converted " + number + " to word is " + NumberToWordConverter.convert(number), Toast.LENGTH_LONG).show();
+        //instance.convert(number);
+       // millionFormat.convert(number);
+        Toast.makeText(this, "Converted " + number + " to word is " + NumberToWordConverterLakhFormat.convert(number), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Converted " + number + " to word is " + NumberToWordConverterMillionFormat.convert(number), Toast.LENGTH_LONG).show();
 
     }
 }
