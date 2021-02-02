@@ -85,7 +85,6 @@ public class NumberToWordConverterMillionFormat {
             powersList = new ArrayList<PowerName>();
             powersList.add(new PowerName(2, "Hundred"));
             powersList.add(new PowerName(3, "Thousand"));
-            powersList.add(new PowerName(5, "Hundred Thousand"));
             powersList.add(new PowerName(6, "Million"));
             powersList.add(new PowerName(9, "Billion"));
         }
