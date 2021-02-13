@@ -12,7 +12,17 @@ public class NumberToWordConverterMillionFormat {
     public static String convert(int number) {
         prepareDirectMappings();
         preparePowerList();
-        return convertRecursion(number, true);
+
+        if(number<0)
+        {
+            String raw=convertRecursion(Math.abs(number), true);
+            return "Minus ".concat(raw);
+        }
+        else
+        {
+            return convertRecursion(number, true);
+
+        }
     }
 
     private static String convertRecursion(int number, Boolean isInitialIteration) {
@@ -82,7 +92,7 @@ public class NumberToWordConverterMillionFormat {
 
     private static void preparePowerList() {
         if (powersList == null) {
-            powersList = new ArrayList<PowerName>();
+            powersList = new ArrayList<>();
             powersList.add(new PowerName(2, "Hundred"));
             powersList.add(new PowerName(3, "Thousand"));
             powersList.add(new PowerName(6, "Million"));

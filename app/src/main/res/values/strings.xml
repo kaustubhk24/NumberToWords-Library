@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NumberToWords Example</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="million_format">Million Format</string>
+    <string name="e_g_125_225_start_typing">e.g. 125, 225 Start typing…</string>
+    <string name="lakh_format">Lakh Format</string>
 </resources>
