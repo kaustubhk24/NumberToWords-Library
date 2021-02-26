@@ -6,6 +6,38 @@
 
 # Usage 
 
+Visit JitPack & Get Instructions [here](https://jitpack.io/#kaustubhk24/NumberToWords-Library)
+
+OR
+
+Follow Guide Below
+
+Step 1:
+Add it in your root build.gradle at the end of repositories:
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+```
+
+Step 2: Add the dependency
+
+( Always Use Latest version )
+
+```
+dependencies {
+	        implementation 'com.github.kaustubhk24:NumberToWords-Library:194ad03fc1'
+	}
+  
+  ```
+  
+ Step 3 : Create instances as you need. ( See example below)
+  
 ```java
 // For Lakh format
 
@@ -28,3 +60,8 @@ String wordMillion = instance_for_Million.convert(-5552);
 
 
 ```
+
+
+## Top Known Users
+
+[Denomination](https://play.google.com/store/apps/details?id=com.justinclicks.denomination) app by [JustInClicks.com](https://www.justinclicks.com) uses this Library
